@@ -42,7 +42,7 @@ This section is a collection of links that will help you make the most of today'
   * for the `aws_instance` resource can be found on [terraform.io/docs/providers/aws/r/instance.html](https://www.terraform.io/docs/providers/aws/r/instance.html)
   * for the `aws_ebs_volume` resource can be found on [terraform.io/docs/providers/aws/r/ebs_volume.html](https://www.terraform.io/docs/providers/aws/r/ebs_volume.html)
   * for the `aws_volume_attachment` resource can be found on [terraform.io/docs/providers/aws/r/volume_attachment.html](https://www.terraform.io/docs/providers/aws/r/volume_attachment.html)
-
+* Learn Guide: Build infrastructure [learn.hashicorp.com/terraform/getting-started/build](https://learn.hashicorp.com/terraform/getting-started/build)
 * Build your own AMIs with Packer: [packer.io/docs/builders/amazon/](https://www.packer.io/docs/builders/amazon/)
 
 ### Code Quality
@@ -76,6 +76,15 @@ terraform import \
 specify the Terraform-native resource (`aws_s3_bucket.hug_demo`) as well as the provider resource (`hug-demo`)
 
 * use [Terraformer](https://github.com/GoogleCloudPlatform/terraformer) for importing large sets of resources
+
+### Modules
+
+* use modules as building blocks
+* module documentation: [terraform.io/docs/configuration/modules.html](https://www.terraform.io/docs/configuration/modules.html)
+* module registry: [registry.terraform.io](https://registry.terraform.io)
+* Learn Guide: Modules on [learn.hashicorp.com/terraform/modules/modules-overview](https://learn.hashicorp.com/terraform/modules/modules-overview)
+
+https://registry.terraform.io
 
 ## Author Information
 
