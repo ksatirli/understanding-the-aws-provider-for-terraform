@@ -18,7 +18,7 @@ This section is a collection of links that will help you make the most of today'
 
 * repository: [hashicorp/hcl](https://github.com/hashicorp/hcl/tree/hcl2)
 
-$## Terraform Basics
+## Terraform Basics
 
 * CLI commands [terraform.io/docs/commands/index.html](https://www.terraform.io/docs/commands/index.html)
 * variables and type constraints: [terraform.io/docs/configuration/variables.html](https://www.terraform.io/docs/configuration/variables.html#type-constraints)
