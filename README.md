@@ -7,6 +7,13 @@
 - [Understanding the AWS Provider for Terraform](#understanding-the-aws-provider-for-terraform)
   - [Table of Contents](#table-of-contents)
   - [Reading material](#reading-material)
+    - [HashiCorp Configuration Languag](#hashicorp-configuration-language)
+    - [Docker Provider for Terraform](#docker-provider-for-terraform)
+    - [AWS Provider for Terraform](#aws-provider-for-terraform)
+    - [Code Quality](#code-quality)
+    - [Visualizing resources](#visualizing-resources)
+    - [Importing resources](#importing-resources)
+    - [Modules](#modules)
   - [Author Information](#author-information)
   - [License](#license)
 
@@ -54,6 +61,21 @@ Before `plan` and `apply`, always clean up your code:
 * use [pre-commit](https://pre-commit.com) to run more checks
   * community member [@antonbabenko/](https://github.com/antonbabenko/) built and maintains [pre-commit-terraform](https://github.com/antonbabenko/pre-commit-terraform)
 
+For more advanced use-cases, have a look at [tflint](https://github.com/terraform-linters/tflint). This application can alert you to provider-specific issues such as defining a non-existant `t12.micro` instance type.
+
+### Visualizing resources
+
+Visualize Terraform-managed resources using the `terraform graph` command:
+
+```shell
+terraform graph \
+  | dot -Tpng > "infrastructure.png"
+```
+
+This uses the `dot` library to render the `.digraph` file into a PNG image (`infrastructure.png`).
+
+[blast-radius](https://github.com/28mm/blast-radius) from [Patrick McMurchie](https://github.com/28mm) is another great way of visualizing your resources.
+
 ### Importing resources
 
 * use the [terraform import](https://www.terraform.io/docs/import/index.html) command:
@@ -83,8 +105,6 @@ specify the Terraform-native resource (`aws_s3_bucket.hug_demo`) as well as the 
 * module documentation: [terraform.io/docs/configuration/modules.html](https://www.terraform.io/docs/configuration/modules.html)
 * module registry: [registry.terraform.io](https://registry.terraform.io)
 * Learn Guide: Modules on [learn.hashicorp.com/terraform/modules/modules-overview](https://learn.hashicorp.com/terraform/modules/modules-overview)
-
-https://registry.terraform.io
 
 ## Author Information
 
