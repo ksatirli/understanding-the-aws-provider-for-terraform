@@ -7,7 +7,7 @@
 - [Understanding the AWS Provider for Terraform](#understanding-the-aws-provider-for-terraform)
   - [Table of Contents](#table-of-contents)
   - [Reading material](#reading-material)
-    - [HashiCorp Configuration Languag](#hashicorp-configuration-language)
+    - [HashiCorp Configuration Language](#hashicorp-configuration-language)
     - [Docker Provider for Terraform](#docker-provider-for-terraform)
     - [AWS Provider for Terraform](#aws-provider-for-terraform)
     - [Code Quality](#code-quality)
